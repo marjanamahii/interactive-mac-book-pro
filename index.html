@@ -30,30 +30,30 @@
                     </div>
                     <div>
                         <h2 class="text-2xl mb-4">Memory</h2>
-                        <button id="memory-input1" class="border-2 border-gray-400 rounded px-2">8GB unified
+                        <button id="8GB-memory" class="border-2 border-gray-400 rounded px-2">8GB unified
                             memory</button>
-                        <button id="memory-input2" class="border-2 border-gray-400 rounded px-2">16GB unified
+                        <button id="16GB-memory" class="border-2 border-gray-400 rounded px-2">16GB unified
                             memory</button>
                     </div>
 
                     <div>
                         <h2 class="text-2xl mb-4">Storage</h2>
-                        <button id="storage-input1" class="border-2 border-gray-400 rounded px-2">256GB SSD
+                        <button id="256GB-SSD-storage" class="border-2 border-gray-400 rounded px-2">256GB SSD
                             storage</button>
 
-                        <button id="storage-input2" class="border-2 border-gray-400 rounded px-2">512GB SSD
+                        <button id="512GB-SSD-storage" class="border-2 border-gray-400 rounded px-2">512GB SSD
                             storage</button>
 
-                        <button id="storage-input3" class="border-2 border-gray-400 rounded px-2">1TB SSD
+                        <button id="1TB-SSD-storage" class="border-2 border-gray-400 rounded px-2">1TB SSD
                             storage</button>
 
                     </div>
                     <div>
                         <h2 class="text-2xl mb-4">Choose your delivery option</h2>
-                        <button id="delivery-input" class="border-2 border-gray-400 rounded px-2">Friday, Aug 25 Free
+                        <button id="free-delivery" class="border-2 border-gray-400 rounded px-2">Friday, Aug 25 Free
                             Prime Delivery</button>
 
-                        <button id="delivery-charge-input" class="border-2 border-gray-400 rounded px-2">Friday, Aug 21
+                        <button id="paid-delivery" class="border-2 border-gray-400 rounded px-2">Friday, Aug 21
                             Delivery Charge $20</button>
 
                     </div>
@@ -86,20 +86,26 @@
                             </tbody>
                         </table>
                     </div>
-                    <!-- Promo Code -->
+                    <!------------
+                        Promo Code 
+                    ------------->
                     <div>
                         <h3>Add Promo Code</h3>
                         <form action="">
-                            <input class="border-2 rounded px-2 py-2" type="text" placeholder="">
-                            <button class="bg-red-700 text-white border-2 rounded px-2 py-2"
-                                onclick="discount_code()">Apply</button>
+                            <input id="promo-input" class="border-2 rounded px-2 py-2" type="text">
+                            <button id="promo-button" class="bg-red-700 text-white border-2 rounded px-2 py-2"
+                                style="background-color: #dc3545;">Apply</button>
                         </form>
                     </div>
                 </div>
             </div>
-            <h1 class="border-t-2 text-center text-2xl font-bold mt-4 mb-4">Total: $1299</h1>
+            <h1 class="border-t-2 text-center text-2xl font-bold mt-4 mb-4">Total: $<span
+                    id="promo-discount-total">1299</span></h1>
         </section>
     </main>
+    <!----------
+    custom js
+    ------------>
     <script src="js/mac-book-pro.js"></script>
 </body>
 
